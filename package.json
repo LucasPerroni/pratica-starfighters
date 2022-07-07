@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index.js",
-    "dev": "nodemon index.ts",
-    "ts": "ts-node index.ts"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.ts",
+    "ts": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",

@@ -1,11 +1,12 @@
 import { Request, Response } from "express"
 
 import db from "../../database/db.js"
+import errorHandler from "../middlewares/errorHandler.js"
 
 export async function getRanking(req: Request, res: Response) {
   try {
     res.sendStatus(200)
   } catch (e) {
-    res.sendStatus(500)
+    errorHandler(e, req, res, null)
   }
 }
