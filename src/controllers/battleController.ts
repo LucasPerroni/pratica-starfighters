@@ -13,7 +13,7 @@ export async function postBattle(req: Request, res: Response) {
     res.send(log)
   } catch (e) {
     if (e.response) {
-      return res.sendStatus(e.response.status)
+      return res.status(e.response.status).send(e)
     }
 
     errorHandler(e, req, res, null)
